@@ -1,0 +1,16 @@
+export default class WeatherData {
+    constructor(data) {
+        this.name = data.location.name;
+        this.country = data.location.country
+        this.time = data.location.localtime
+        this.localtime = data.location.localtime
+        this.temp_c = data.current.temp_c
+        this.temp_f = data.current.temp_f
+        this.condition = data.current.condition.text
+        this.feelslike_c = data.current.feelslike_c
+        this.feelslike_f = data.current.feelslike_f
+        this.humidity = data.current.humidity
+        this.rain = data.current.precip_in
+        this.windspeed = data.current.wind_mph
+    }
+}
